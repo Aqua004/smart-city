@@ -17,7 +17,7 @@ INSERT INTO users (id, email, hashed_password, full_name, phone, role, departmen
 (1, 'admin@smartcity.gov', '$2b$12$K8yR2u0hNqV6cKjYQ/z9g.O5a5b5/NqjLq4uQcKvK5qH7o8a6v1Ky', 'Municipal Commissioner Admin', '+91-9876543210', 'ADMIN', NULL),
 (2, 'officer.roads@smartcity.gov', '$2b$12$K8yR2u0hNqV6cKjYQ/z9g.O5a5b5/NqjLq4uQcKvK5qH7o8a6v1Ky', 'Er. Rajesh Sharma', '+91-9876543211', 'DEPARTMENT_OFFICER', 1),
 (3, 'officer.water@smartcity.gov', '$2b$12$K8yR2u0hNqV6cKjYQ/z9g.O5a5b5/NqjLq4uQcKvK5qH7o8a6v1Ky', 'Er. Sunita Verma', '+91-9876543212', 'DEPARTMENT_OFFICER', 2),
-(4, 'citizen@smartcity.gov', '$2b$12$K8yR2u0hNqV6cKjYQ/z9g.O5a5b5/NqjLq4uQcKvK5qH7o8a6v1Ky', 'Ashutosh Pandey', '+91-9876543213', 'CITIZEN', NULL)
+(4, 'citizen@smartcity.gov', '$2b$12$K8yR2u0hNqV6cKjYQ/z9g.O5a5b5/NqjLq4uQcKvK5qH7o8a6v1Ky', 'Aditya', '+91-9876543213', 'CITIZEN', NULL)
 ON CONFLICT (id) DO NOTHING;
 
 -- Reset sequence numbers

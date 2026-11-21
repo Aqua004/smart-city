@@ -68,7 +68,7 @@ export default function Register() {
             <input
               type="text"
               required
-              placeholder="e.g. Ashutosh Pandey"
+              placeholder="e.g. Aditya"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
               style={{ paddingLeft: '2.2rem', width: '100%' }}

@@ -65,7 +65,7 @@ def seed_initial_data():
             citizen_user = User(
                 email="citizen@smartcity.gov",
                 hashed_password=get_password_hash("Citizen@12345"),
-                full_name="Ashutosh Citizen",
+                full_name="Aditya Citizen",
                 phone="+91-9876543212",
                 role=UserRole.CITIZEN
             )

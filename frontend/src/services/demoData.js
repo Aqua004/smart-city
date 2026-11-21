@@ -18,7 +18,7 @@ export const SAMPLE_COMPLAINTS = [
     location_address: 'Pari Chowk, Greater Noida Expressway',
     created_at: new Date(Date.now() - 3600000 * 24).toISOString(),
     updated_at: new Date(Date.now() - 3600000 * 4).toISOString(),
-    citizen: { full_name: 'Ashutosh Pandey', email: 'citizen@smartcity.gov' },
+    citizen: { full_name: 'Aditya', email: 'citizen@smartcity.gov' },
     department: SAMPLE_DEPARTMENTS[0],
     history: [
       { id: 1, status: 'SUBMITTED', remarks: 'Issue registered by citizen via web portal.', created_at: new Date(Date.now() - 3600000 * 24).toISOString() },
@@ -77,7 +77,7 @@ export const SAMPLE_COMPLAINTS = [
     location_address: 'Govt High School Gate 2, Delta 2',
     created_at: new Date(Date.now() - 3600000 * 6).toISOString(),
     updated_at: new Date(Date.now() - 3600000 * 6).toISOString(),
-    citizen: { full_name: 'Ashutosh Pandey', email: 'citizen@smartcity.gov' },
+    citizen: { full_name: 'Aditya', email: 'citizen@smartcity.gov' },
     department: SAMPLE_DEPARTMENTS[3],
     history: [
       { id: 10, status: 'SUBMITTED', remarks: 'Complaint filed by citizen.', created_at: new Date(Date.now() - 3600000 * 6).toISOString() }
