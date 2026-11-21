@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
         const defaultUser = {
           id: 4,
           email: 'citizen@smartcity.gov',
-          full_name: 'Aditya Pandey (Citizen)',
+          full_name: 'Aditya (Citizen)',
           role: 'CITIZEN'
         };
         setUser(defaultUser);
