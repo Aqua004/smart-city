@@ -4,7 +4,7 @@ import api from '../services/api';
 const AuthContext = createContext();
 
 export const DEMO_ACCOUNTS = {
-  CITIZEN: { email: 'citizen@smartcity.gov', password: 'Citizen@12345', label: 'Citizen (Ashutosh)' },
+  CITIZEN: { email: 'citizen@smartcity.gov', password: 'Citizen@12345', label: 'Citizen (Aditya)' },
   ADMIN: { email: 'admin@smartcity.gov', password: 'Admin@12345', label: 'Municipal Admin' },
   DEPARTMENT: { email: 'officer.roads@smartcity.gov', password: 'Officer@12345', label: 'Roads Officer' }
 };
@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
         const defaultUser = {
           id: 4,
           email: 'citizen@smartcity.gov',
-          full_name: 'Ashutosh Pandey (Citizen)',
+          full_name: 'Aditya Pandey (Citizen)',
           role: 'CITIZEN'
         };
         setUser(defaultUser);
