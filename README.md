@@ -1,6 +1,6 @@
 # 🏙️ Smart City Complaint & Infrastructure Management System (DevOps Edition)
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success.svg?style=for-the-badge&logo=github)](https://codexashu.github.io/smart-city-devops/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-EC2-success.svg?style=for-the-badge&logo=amazonaws)](http://ec2-13-50-244-86.eu-north-1.compute.amazonaws.com)
 [![CI/CD Pipeline](https://github.com/codexashu/smart-city-devops/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/codexashu/smart-city-devops/actions/workflows/ci-cd.yml)
 [![Docker](https://img.shields.io/badge/Docker-Multi--stage-blue.svg)](https://www.docker.com/)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-HPA%20%7C%20Self--healing-326ce5.svg)](https://kubernetes.io/)
@@ -9,8 +9,8 @@
 [![Terraform](https://img.shields.io/badge/Terraform-IaC%20AWS-7b42bc.svg)](https://www.terraform.io/)
 [![Security](https://img.shields.io/badge/Trivy-CVE%20Zero--Gate-00b4d8.svg)](https://trivy.dev/)
 
-> 🌐 **Live Web Application:** [https://codexashu.github.io/smart-city-devops/](https://codexashu.github.io/smart-city-devops/)  
-> 🔗 **GitHub Repository:** [https://github.com/codexashu/smart-city-devops](https://github.com/codexashu/smart-city-devops)
+> 🌐 **Live Web Application:** [http://ec2-13-50-244-86.eu-north-1.compute.amazonaws.com](http://ec2-13-50-244-86.eu-north-1.compute.amazonaws.com)  
+> 🔗 **GitHub Repository:** [https://github.com/Aqua004/smart-city](https://github.com/Aqua004/smart-city)
 
 An enterprise-grade, production-style DevOps platform for municipal infrastructure maintenance and citizen grievance redressal. Citizens register public defects (potholes, water leaks, electrical hazards), administrators assign priorities and dispatch work to municipal departments, and field crews resolve issues with before/after photo verification.
 
@@ -150,50 +150,6 @@ smart-city-devops/
 │   ├── run-tests.sh           # Test suite execution
 │   └── k8s-deploy.sh          # One-click Kubernetes deployment
 └── README.md
-```
-
----
-
-## ⚡ Quickstart Guide
-
-### Option A: 1-Command Startup with Docker Compose (Recommended)
-
-```bash
-# Clone the repository
-git clone https://github.com/codexashu/smart-city-devops.git
-cd smart-city-devops
-
-# Launch the complete stack
-docker compose up -d --build
-```
-
-**Services will be live at:**
-- 🌐 **Citizen & Admin Portal:** [http://localhost:3000](http://localhost:3000)
-- 🔌 **FastAPI Swagger Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
-- 📊 **Prometheus Metrics:** [http://localhost:9090](http://localhost:9090)
-- 📈 **Grafana Dashboards:** [http://localhost:3001](http://localhost:3001) *(User: `admin` | Password: `admin`)*
-- 🩺 **Health Check:** [http://localhost:8000/health](http://localhost:8000/health)
-
----
-
-### Option B: Local Standalone Development (Without Docker)
-
-#### 1. Start Backend:
-```bash
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-
-# Run server (automatically seeds demo admin, officer, and citizen)
-uvicorn app.main:app --reload --port 8000
-```
-
-#### 2. Start Frontend:
-```bash
-cd frontend
-npm install
-npm start
 ```
 
 ---
